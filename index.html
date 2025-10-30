@@ -9,27 +9,29 @@
   </head>
   <body>
     <main class="content">
-      <h1 class="title">Juego Piedra, Papel y Tijera</h1>
       <img
         src="./images/pngtree-cute-kawaii-rock-scissors-paper-character-illustration-png-image_17644895.webp"
         alt="imagen kawai de una pidra, un papel y una tijer"
       />
+      <h1 class="title">Piedra, Papel y Tijera</h1>
+
       <h2 class="subtitle">Introduce aquí tu jugada:</h2>
 
       <form class="form-content" id="game-form">
         <select class="selector js_selector" name="jugada" id="">
           <option disabled selected value="">Seleccione su jugada</option>
-          <option value="piedra">piedra</option>
-          <option value="papel">papel</option>
-          <option value="tijera">tijera</option>
+          <option value="Piedra">Piedra</option>
+          <option value="Papel">Papel</option>
+          <option value="Tijera">Tijera</option>
         </select>
         <button class="button js_button" type="submit">Jugar</button>
       </form>
 
-      <p class="result js_result">Vamos a Jugar</p>
-
-      <p>Jugador: <span class="player js_player">0</span></p>
-      <p>Computadora: <span class="computer js_computer">0</span></p>
+      <p class="result js_result">¡Vamos a Jugar!</p>
+      <div class="score">
+        <p>Jugador: <span class="player js_player">0</span></p>
+        <p>Computadora: <span class="computer js_computer">0</span></p>
+      </div>
     </main>
   </body>
 </html>

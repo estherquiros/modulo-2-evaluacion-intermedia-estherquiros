@@ -27,19 +27,19 @@ button.addEventListener("click", (ev) => {
   }
 
   if (randomNumber <= 3) {
-    computerMove = "piedra";
+    computerMove = "Piedra";
   } else if (randomNumber <= 6) {
-    computerMove = "papel";
+    computerMove = "Papel";
   } else {
-    computerMove = "tijera";
+    computerMove = "Tijera";
   }
 
   if (selectedValue === computerMove) {
     resultText = "Empate";
   } else if (
-    (selectedValue === "piedra" && computerMove === "tijera") ||
-    (selectedValue === "papel" && computerMove === "piedra") ||
-    (selectedValue === "tijera" && computerMove === "papel")
+    (selectedValue === "Piedra" && computerMove === "Tijera") ||
+    (selectedValue === "Papel" && computerMove === "Piedra") ||
+    (selectedValue === "Tijera" && computerMove === "Papel")
   ) {
     resultText = "¡Has ganado!";
     playerScore++;
