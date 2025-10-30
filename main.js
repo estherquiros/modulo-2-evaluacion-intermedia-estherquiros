@@ -62,8 +62,9 @@ button.addEventListener("click", (ev) => {
   }
 
   if (playerScore === 10) {
-    result.innerHTML = "¡Felicidades! ¡Has ganado el juego!";
+    result.innerHTML = "¡Felicidades! ¡Has ganado el juego! 🎉";
   } else if (computerScore === 10) {
-    result.innerHTML = "Lo siento, has perdido el juego. ¡Inténtalo de nuevo!";
+    result.innerHTML =
+      "Lo siento, has perdido el juego. ¡Inténtalo de nuevo! 💪🏼";
   }
 });
