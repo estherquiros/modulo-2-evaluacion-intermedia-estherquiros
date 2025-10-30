@@ -9,6 +9,7 @@ const button = document.querySelector(".js_button");
 const result = document.querySelector(".js_result");
 const player = document.querySelector(".js_player");
 const computer = document.querySelector(".js_computer");
+const reset = document.querySelector(".js_button-reset");
 
 let playerScore = 0;
 let computerScore = 0;
@@ -54,4 +55,15 @@ button.addEventListener("click", (ev) => {
 
   console.log("Tu elección:", selectedValue);
   console.log("Ordenador:", computerMove);
+
+  if (playerScore === 10 || computerScore === 10) {
+    button.classList.add("hidden");
+    reset.classList.remove("hidden");
+  }
+
+  if (playerScore === 10) {
+    result.innerHTML = "¡Felicidades! ¡Has ganado el juego!";
+  } else if (computerScore === 10) {
+    result.innerHTML = "Lo siento, has perdido el juego. ¡Inténtalo de nuevo!";
+  }
 });
