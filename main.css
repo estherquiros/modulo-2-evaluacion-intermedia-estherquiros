@@ -13,13 +13,40 @@
   gap: 60px;
   align-items: center;
   height: 100dvh;
+  background-color: #fffac6;
+  font-family: "'Fredoka One', cursive;";
+}
+.title {
+  font-size: 48px;
+  color: #a7caeb;
+  font-family: "'Fredoka One', cursive;";
+}
+.subtitle {
+  font-size: 24px;
+  color: #a7caeb;
+  font-family: "'Fredoka One', cursive;";
 }
 
 .selector {
-  width: 50px;
   border: none;
   border-radius: 4px;
-  padding: 5px;
-  background-color: #ffe9eb;
-  color: black;
+  padding: 10px 20px;
+  background-color: #b39ddb;
+  color: white;
+  font-size: 16px;
+}
+.button {
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  background-color: #b39ddb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.result {
+  border: #b39ddb;
+  font-size: 20px;
+  color: #333;
+  font-family: "'Fredoka One', cursive;";
 }
