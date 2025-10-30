@@ -21,10 +21,10 @@ button.addEventListener("click", (ev) => {
   let computerMove = "";
   let resultText = "";
 
-  // si el jugador no selecciona nada salimos de la función
+  // si el jugador no selecciona nada salimos de la función (seleccciona una opción)
   if (selectedValue === "") {
     result.innerHTML = "Selecciona una opción para jugar";
-    return;
+    return; //para que no siga ejecutándose el resto del código
   }
 
   if (randomNumber <= 3) {
